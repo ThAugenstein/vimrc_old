@@ -4,7 +4,7 @@
 set nocompatible
 
 " Activate pathogen
-" call pathogen#infect()
+call pathogen#infect()
 
 " -- Display
 set title	  	" Update the tilte of the window or terminal
@@ -64,5 +64,5 @@ let g:syntastic_check_on_wq = 0
 
 " Use the dark version of Solarized
 set background=dark
-" colorscheme solarized
+colorscheme solarized
 
