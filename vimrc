@@ -2,6 +2,7 @@
 
 " Cancel the compatibility with Vi.
 set nocompatible
+set updatetime=100
 
 " Activate pathogen
 call pathogen#infect()
