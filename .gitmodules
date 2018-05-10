@@ -10,3 +10,9 @@
 [submodule "bundle/vim-swift"]
 	path = bundle/vim-swift
 	url = git://github.com/toyamarinyon/vim-swift.git
+[submodule "bundle/vim-airline"]
+	path = bundle/vim-airline
+	url = https://github.com/vim-airline/vim-airline.git
+[submodule "bundle/vim-ariline-themes"]
+	path = bundle/vim-ariline-themes
+	url = https://github.com/vim-airline/vim-airline-themes.git
