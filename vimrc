@@ -1,6 +1,6 @@
 " VIM Configuration - Thomas Augenstein
 
-" Cancel the compatibility with Vi. 
+" Cancel the compatibility with Vi.
 set nocompatible
 
 " Activate pathogen
@@ -38,7 +38,7 @@ set tabstop=4
 " Hide buffer (file) instead of abandoning when switching
 " to another buffer
 set hidden
-        
+
 " Disable the directional keys
 map <up> <nop>
 map <down> <nop>
@@ -60,12 +60,12 @@ filetype indent on
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
- 
+
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
- 
+
 " Use the dark version of Solarized
 set background=dark
 " let g:solarized_termcolors=16
