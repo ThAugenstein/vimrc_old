@@ -64,6 +64,9 @@ endtry
 
 set history=500
 
+" -- MRU PLugin
+map <leader>f :MRU<CR>
+
 " Disable the directional keys
 map <up> <nop>
 map <down> <nop>
