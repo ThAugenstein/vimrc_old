@@ -1,11 +1,14 @@
 " VIM Configuration - Thomas Augenstein
 
+" Activate pathogen
+call pathogen#infect()
+
 " Cancel the compatibility with Vi.
 set nocompatible
 set updatetime=100
-
-" Activate pathogen
-call pathogen#infect()
+set autoread            " Set do auto read when a file has changed from the outside
+set lazyredraw          " Don't redraw while executing macros 
+                        " (good performance config)
 
 " -- Display
 set title               " Update the tilte of the window or terminal
@@ -33,8 +36,10 @@ set noerrorbells        " Prevent Vim from beeping
 set backspace=indent,eol,start
 
 " Expand tabs to spaces
-set expandtab
-set tabstop=4
+set expandtab           " Use spaces instead of tabs    
+set tabstop=4           " 1 tab = 4 spaces
+set shiftwidth=4        " 1 tab = 4 spaces
+set smarttab            " Be smart when using tabs ;)
 
 " Hide buffer (file) instead of abandoning when switching
 " to another buffer
@@ -46,6 +51,8 @@ try
     set undofile
 catch
 endtry
+
+set history=500
 
 " Disable the directional keys
 map <up> <nop>
@@ -59,6 +66,7 @@ imap <right> <nop>
 
 " Enable syntax highlighting
 syntax enable
+
 " Enable file specific behavior like syntax highlighting and identation
 filetype on
 filetype plugin on
