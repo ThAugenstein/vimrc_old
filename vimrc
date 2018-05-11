@@ -67,6 +67,15 @@ set history=500
 " -- MRU PLugin
 map <leader>f :MRU<CR>
 
+" -- NERD Tree 
+let g:NERDTreeWinPos = "right"
+let NERDTreeShowHidden = 0
+let NERDTreeIgnore = ['\.pyc$', '__pycache__']
+let g:NERDTreeWinSize = 35
+map <leader>nn :NERDTreeToggle<cr>
+map <leader>nb :NERDTreeBookmark<Space>
+map <leader>nf :NERDTreeFind<cr>
+
 " Disable the directional keys
 map <up> <nop>
 map <down> <nop>
