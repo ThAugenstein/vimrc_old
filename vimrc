@@ -7,8 +7,11 @@ call pathogen#infect()
 set nocompatible
 set updatetime=100
 set autoread            " Set do auto read when a file has changed from the outside
-set lazyredraw          " Don't redraw while executing macros 
+set lazyredraw          " Don't redraw while executing macros
                         " (good performance config)
+
+let mapleader = ","     " With a map leader it's possible to do extra key
+                        " combinations like <leader>w for save etc.
 
 " -- Display
 set title               " Update the tilte of the window or terminal
@@ -32,11 +35,18 @@ set hlsearch            " Highlight search results
 set visualbell          " Prevent Vim from beeping
 set noerrorbells        " Prevent Vim from beeping
 
+" -- Search
+map <space> /
+map <c-space> ?
+
+" Disable highlight when <leader><cr> is pressed
+map <silent> <leader><cr> :noh<cr>
+
 " Backspace behaves as expected
 set backspace=indent,eol,start
 
 " Expand tabs to spaces
-set expandtab           " Use spaces instead of tabs    
+set expandtab           " Use spaces instead of tabs
 set tabstop=4           " 1 tab = 4 spaces
 set shiftwidth=4        " 1 tab = 4 spaces
 set smarttab            " Be smart when using tabs ;)
