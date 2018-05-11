@@ -40,6 +40,13 @@ set tabstop=4
 " to another buffer
 set hidden
 
+" Turn on persistent undo on
+try
+    set undodir=~/.vim_runtime/temp_dirs/undodir
+    set undofile
+catch
+endtry
+
 " Disable the directional keys
 map <up> <nop>
 map <down> <nop>
