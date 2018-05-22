@@ -67,7 +67,7 @@ set history=500
 " -- MRU PLugin
 map <leader>f :MRU<CR>
 
-" -- NERD Tree 
+" -- NERD Tree
 let g:NERDTreeWinPos = "right"
 let NERDTreeShowHidden = 0
 let NERDTreeIgnore = ['\.pyc$', '__pycache__']
@@ -103,6 +103,10 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:syntastic_enable_perl6_checker = 1
+let g:syntastic_perl6_checkers = ['perl6']
+let g:syntastic_enable_perl_checker = 1
+let g:syntastic_perl_checkers = ['perl']
 
 " Use the dark version of Solarized
 set background=dark
