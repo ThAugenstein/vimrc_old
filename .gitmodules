@@ -25,3 +25,9 @@
 [submodule "bundle/mru.vim"]
 	path = bundle/mru.vim
 	url = https://github.com/vim-scripts/mru.vim.git
+[submodule "bundle/vim-perl"]
+	path = bundle/vim-perl
+	url = https://github/vim-perl/vim-perl.git
+[submodule "bundle/vim-perl6"]
+	path = bundle/vim-perl6
+	url = https://github/vim-perl6/vim-perl6.git

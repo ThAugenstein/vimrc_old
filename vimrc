@@ -86,6 +86,17 @@ imap <down> <nop>
 imap <left> <nop>
 imap <right> <nop>
 
+" Make <Tab> switch windows
+map <Tab> <C-W>w
+map <Bar> <C-W>v<C-W><Right>
+map -     <C-W>s<C-W><Down>
+
+" Easier movement between windows with Ctrl - hjkl
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+
 " Enable syntax highlighting
 syntax enable
 
